@@ -1,2 +1,8 @@
 Udemy Course:
 https://www.udemy.com/full-stack-react-with-graphql-and-apollo-boost/learn/v4/overview
+
+
+*** *** *** *** *** *** ***
+Server
+
+$ npm run server
