@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser'); // Middleware
+const cors = require('cors');
 require('dotenv').config({ path: 'variables.env' });
 
 const { graphiqlExpress, graphqlExpress } = require('apollo-server-express');
@@ -45,7 +46,11 @@ mongoose
 const app = express();
 const endpointURL = '/graphql';
 
-
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    credentials: true
+};
+app.use(cors(corsOptions))
 
 // *** *** *** *** *** *** ***
 // GraphQL Setup
