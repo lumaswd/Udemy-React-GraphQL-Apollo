@@ -53,7 +53,7 @@ const endpointURL = '/graphql';
 app.use('/graphiql', graphiqlExpress({ endpointURL }));
 app.use(endpointURL, bodyParser.json(), graphqlExpress({
     schema,
-    conext: { // Adding Monoose Models to GraphQL
+    context: { // Adding Monoose Models to GraphQL
         Recipe,
         User
     }

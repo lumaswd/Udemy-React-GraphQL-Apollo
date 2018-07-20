@@ -6,3 +6,33 @@ https://www.udemy.com/full-stack-react-with-graphql-and-apollo-boost/learn/v4/ov
 Server
 
 $ npm run server
+
+
+
+
+
+Graphiql
+
+mutation AddRecipeMutation($input: AddRecipeInput) {
+  addRecipe(input: $input) {
+    username
+    name
+    description
+    instructions
+    likes
+  }
+}
+
+{
+  "input": {
+    "name": "Lukas",
+    "description": "Test Entry",
+    "category": "Luma",
+    "instructions": "Haha"
+  }
+}
+
+
+
+
+// Lecture 12

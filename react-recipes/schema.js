@@ -4,6 +4,10 @@ type Query {
     getAllRecipes: [Recipe]
 }
 
+type Mutation {
+    addRecipe(input: AddRecipeInput): Recipe
+}
+
 type Recipe {
     name: String!
     category: String!
@@ -20,6 +24,15 @@ type User {
     email: String!
     joinDate: String
     favorites: [Recipe]
+}
+
+
+input AddRecipeInput {
+    name: String!
+    description: String!
+    category: String!
+    instructions: String!
+    username: String   
 }
 
 `;
