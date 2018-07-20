@@ -39,6 +39,23 @@ mutation AddRecipeMutation($input: AddRecipeInput) {
   }
 }
 
+OTHER Example
+
+mutation SignupUserMutation($signupUserInput: SignupUserInput) {
+  signupUser(signupUserInput: $signupUserInput) {
+    token
+  }
+}
+
+{
+  "signupUserInput": {
+    "username": "NooBiiLM",
+    "email": "l.machetanz@icloud.com",
+    "password": "Geheim123"
+  } 
+}
+
+
 
 ### Query Example
 
