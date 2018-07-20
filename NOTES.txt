@@ -49,3 +49,15 @@ query {
     _id
   }
 }
+
+
+
+
+
+
+
+
+CLIENT
+
+$ npm i -g create-react-app
+$ create-react-app client
