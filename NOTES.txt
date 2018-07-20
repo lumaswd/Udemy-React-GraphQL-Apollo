@@ -10,8 +10,11 @@ $ npm run server
 
 
 
+=== === === === === === ===
+Graphiql Example
 
-Graphiql
+
+### Mutation Example
 
 mutation AddRecipeMutation($input: AddRecipeInput) {
   addRecipe(input: $input) {
@@ -33,6 +36,16 @@ mutation AddRecipeMutation($input: AddRecipeInput) {
 }
 
 
+### Query Example
 
-
-// Lecture 12
+query {
+  getAllRecipes {
+    name
+    username
+    instructions
+    description
+    createdDate
+    likes
+    _id
+  }
+}
