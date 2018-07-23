@@ -12,3 +12,15 @@ export const GET_ALL_RECIPES = gql`
         }
     }
 `;
+
+
+
+/* User Mutations */
+
+export const SIGNUP_USER = gql`
+    mutation SignupUserMutation($signupUserInput: SignupUserInput) {
+        signupUser(signupUserInput: $signupUserInput) {
+            token
+        }
+    }
+`;
