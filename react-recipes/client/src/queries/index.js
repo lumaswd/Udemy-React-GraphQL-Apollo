@@ -17,6 +17,14 @@ export const GET_ALL_RECIPES = gql`
 
 /* User Mutations */
 
+export const SIGNIN_USER = gql`
+    mutation SigninUserMutation($signinUserInput: SigninUserInput) {
+        signinUser(signinUserInput: $signinUserInput) {
+            token
+        }
+}
+`;
+
 export const SIGNUP_USER = gql`
     mutation SignupUserMutation($signupUserInput: SignupUserInput) {
         signupUser(signupUserInput: $signupUserInput) {

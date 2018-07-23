@@ -1,7 +1,7 @@
 Udemy Course:
 https://www.udemy.com/full-stack-react-with-graphql-and-apollo-boost/learn/v4/overview
 
-// --N-- Begin Lecture 23
+// Begin Lecture 32
 
 
 
@@ -58,7 +58,7 @@ mutation SignupUserMutation($signupUserInput: SignupUserInput) {
 OTHER Example
 
 mutation SigninUserMutation($signinUserInput: SigninUserInput) {
-  signinUser(singinUserInput: $signinUserInput) {
+  signinUser(signinUserInput: $signinUserInput) {
     token
   }
 }
